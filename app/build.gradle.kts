@@ -50,7 +50,7 @@ dependencies {
 
 //    Room Database
     implementation(libs.androidx.room.runtime)
-    implementation(libs.room.compiler)
+    kapt(libs.room.compiler)
     implementation(libs.androidx.room.ktx)
     androidTestImplementation(libs.androidx.room.testing)
 
@@ -60,12 +60,15 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.activity.ktx)
 
-//    kotlin components
+////    kotlin components
     implementation(libs.kotlin.stdlib.jdk7)
 
 //    coroutines
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.android)
+
+//    splash screen
+    implementation(libs.androidx.core.splashscreen)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
